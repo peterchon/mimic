@@ -1,0 +1,93 @@
+.reset {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	@extend .reset;
+	font-family:sans-serif;
+}
+
+header, footer, aside, section, menu, nav, article, div, ul, ol, li, table, thead, tbody, tfoot, tr, td {
+	@include box-sizing(border-box);
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size: 4em - .4 * $i;
+	}
+}
+
+.cf {
+	*zoom:1;
+	&:before, &:after {
+		content:"";
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}
+}
+
+.margin-5 {
+	margin: 5px;
+}
+.margin-10 {
+	margin: 10px;
+}
+.margin-15 {
+	margin: 15px;
+}
+.margin-20 {
+	margin: 20px;
+}
+.margin-25 {
+	margin: 25px;
+}
+.margin-30 {
+	margin: 30px;
+}
+.margin-35 {
+	margin: 35px;
+}
+.margin-40 {
+	margin: 40px;
+}
+.margin-45 {
+	margin: 45px;
+}
+.margin-50 {
+	margin: 50px;
+}
+
+
+.padding-5 {
+	padding: 5px;
+}
+.padding-10 {
+	padding: 10px;
+}
+.padding-15 {
+	padding: 15px;
+}
+.padding-20 {
+	padding: 20px;
+}
+.padding-25 {
+	padding: 25px;
+}
+.padding-30 {
+	padding: 30px;
+}
+.padding-35 {
+	padding: 35px;
+}
+.padding-40 {
+	padding: 40px;
+}
+.padding-45 {
+	padding: 45px;
+}
+.padding-50 {
+	padding: 50px;
+}

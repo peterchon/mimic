@@ -1,0 +1,73 @@
+// gray scale
+.color-white {
+	color:white;
+}
+.color-eee {
+	color:#eee;
+}
+.color-ddd {
+	color:#ddd;
+}
+.color-ccc {
+	color:#ccc;
+}
+.color-bbb {
+	color:bbb;
+}
+.color-aaa {
+	color:#aaa;
+}
+.color-999 {
+	color:#999;
+}
+.color-777 {
+	color:#777;
+}
+.color-555 {
+	color:#555;
+}
+.color-333 {
+	color:#333;
+}
+.color-111 {
+	color:#111;
+}
+
+
+// font-family
+.sans-serif {
+	font-family:sans-serif;
+}
+.serif {
+	font-family:serif;
+}
+
+// font-style
+.capitalize {
+	text-transform: capitalize;
+}
+.upper-case {
+	text-transform: uppercase;
+}
+.lower-case {
+	text-transform: lowercase;
+}
+.italic {
+	font-style: italic;
+}
+.align-left {
+	text-align:left;
+}
+.align-right {
+	text-align:right;	
+}
+.align-center {
+	text-align:center;	
+}
+
+// font-size
+@for $i from 12 through 44 {
+	.font-size-#{$i} {
+		font-size: 0px + $i;
+	}
+}

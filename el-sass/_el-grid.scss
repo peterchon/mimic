@@ -1,0 +1,20 @@
+.el {
+	@extend .cf;
+	@for $i from 1 through 12 {
+		$width: (100% - (2 * (12 / $i - 1))) / (12 / $i);
+		.col-#{$i} {
+			float:left;
+			width: $width;
+		}
+		.offset-#{$i} {
+			margin-right: $width;
+		}
+	}
+	[class^="col-"] {
+		@extend .float-left;
+		margin-left:2%;
+		&:first-child {
+			margin-left:0;
+		}
+	}
+}
