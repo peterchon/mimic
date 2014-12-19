@@ -4,18 +4,39 @@
 		<meta charset="utf8">
 		<meta http-equiv="X-UA-compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>slate</title>
-		<link rel="stylesheet" href="css/style.css">		
+		<title>Brik</title>
+		<link rel="stylesheet" href="css/brik.css">		
+		<link rel="stylesheet" href="css/style.css">	
 	</head>
 	<body>
 		
 		<div class="max-960 adjust-center">
 			<header class="heading padding-50 border-bottom">
-				<p>I built Brik for CMS.</p>
+				<p class="margin-0">Brik was built for CMS.</p>
 			</header>
 			<section class="padding-50">
-				<p>Style change in CMS is hard. Brik helps by allowing authors to change CSS without touching the stylesheet.</p>
-				<p>You might even say that this is a new way of thinking, not doing. But also, doing.</p>
+				<p>The problem with stylesheet is that you have to find the style and write additional classes to override the current class, or worst, <code class="red">!important</code> it. What are we animals? There's got to be a better way!</p>
+				
+				<p>Styling should be simple. Extending existing styles should be even simpler. Imagine looking at the paragraph and seeing: <code>class="padding-50"</code>. What would that tell you? Or what if you saw a heading with: <code>class="size-4em"</code>? Wouldn't this be easier to understand? Wouldn't this be easier to modify than to go hunting for <code>class="my-new-heading-V2_Final"</code>?</p>
+				
+				<p>You're probably thinking: "that's way too many classes to write out!" And, yes, you're right. But if you think of all the little minor adjustments that you do on a daily basis, there's not that many.</p>
+				
+				<p>If you have a pre-defined unit of measurement for padding or margin (5s, 10s, or 12s), you can make those in to a class. This means that even if you have defined styles that uses a stylesheet, you can always override them using Brik.</p>
+				<p><strong>For example:</strong></p>
+				<div class="example">
+					<p class="margin-bottom-10">Let say you have a stylesheet with a <code>p {margin-bottom:20px;}</code> but want the last one to be <code>p {margin-bottom:0;}</code>. Of course you can use the <code>:last-child</code> property, but what if this was a author in CMS that doesn't know or have limited access?</p>
+					<code class="border display-block padding-20">
+						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
+						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
+						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>											
+					</code>
+					
+					<p class="margin-top-20 margin-bottom-10">Wouldn't it be great if you can give them the option of making quick changes like this? Without having to worry about anyone overriding your default style?</p>
+					<code class="border display-block padding-20">
+						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
+						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>											
+						<p class="margin-0">&lt;p class="margin-0"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
+					</code>
 			</section>
 		</div>
 		

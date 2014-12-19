@@ -1,31 +1,22 @@
-@import 'compass/css3';
-@import 'inc/reset';
-@import 'inc/css3';
-@import 'inc/position';
-@import 'inc/grid';
-@import 'inc/box-style';
-@import 'inc/table';
-@import 'inc/form';
-
-.padding-10 {
-	padding:10px;
+.heading {
+	p {
+		font-size:1.2em;
+		color:#202020;	
+	}
 }
 
-.padding-50 {
-	padding:50px;
+p {
+	margin-bottom:2em;
 }
 
-.add-answers-mark:before {
-	content:'A:';
+.padding-20 {
+	padding:20px;
 }
 
 .margin-top-20 {
 	margin-top:20px;
 }
 
-.heading {
-	p {
-		font-size:1.2em;
-		color:$dark-gray;	
-	}
+.margin-bottom-10 {
+	margin-bottom:10px;
 }
