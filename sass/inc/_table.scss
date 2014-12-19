@@ -1,0 +1,31 @@
+table {
+	width:100%;
+	border-collapse:collapse;
+	text-align:left;
+	vertical-align:middle;
+	&.striped {
+		tr:nth-child(2n) {
+			background-color:$light-gray;
+		}
+	}
+	&.table-border-top {
+		tr {
+			border-top:1px solid #ccc;
+			&:first-child {
+				border-top:0;
+			}
+		}
+		border-bottom:1px solid $light-gray;
+	}
+	&.table-border-bottom {
+		tr {
+			border-bottom:1px solid $light-gray;
+		}		
+	}
+	&.table-border {
+		th,
+		td {
+			border:1px solid $light-gray;
+		}		
+	}	
+}

@@ -1,0 +1,81 @@
+@import "colors";
+
+.reset {
+	margin:0;
+	padding:0;
+	@include box-sizing(border-box);
+}
+
+.cf {
+	*zoom:1;
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}
+}
+
+html, body {
+	@extend .reset;
+	font-family: sans-serif;
+	font-weight:100;
+	color: $dark-gray;
+}
+
+body {
+	overflow-y:scroll;
+	background-color:$ultra-light-gray;
+}
+
+header, nav, menu, section, aside, article, footer {
+	@extend .reset;
+	display:block;
+}
+
+div, ul, ol, li, table, thead, tbody, tfoot, tr, td, th {
+	@extend .reset;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+	@extend .reset;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size: 3.6em - $i * .4;
+		font-weight:100;
+	}
+}
+
+span, strong, em, b, i, u {
+	@extend .reset;
+	display:inline-block;
+}
+
+img {
+	border:0;
+	display:inline-block;
+}
+
+a {
+	display:inline-block;
+	text-decoration:none;
+	&:link {
+		color:$blue;
+	}
+	&:visited {
+		color:$blue;
+	}
+	&:hover {
+		color:$dark-blue;
+	}
+	&:active {
+		color:$ultra-dark-blue;
+	}
+	&:focus {
+		outline:0;
+	}
+}

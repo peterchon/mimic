@@ -1,0 +1,19 @@
+.radius-3 {
+	@include border-radius(3px);
+}
+
+.radius-5 {
+	@include border-radius(5px);
+}
+
+.radius-10 {
+	@include border-radius(10px);
+}
+
+.radius-20 {
+	@include border-radius(20px);
+}
+
+.radius-360 {
+	@include border-radius(100%);
+}
