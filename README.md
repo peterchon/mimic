@@ -10,7 +10,7 @@ brik is also to stop the process of applying a framework and then having to over
 Applying brik to your project is simple, just follow these 3 easy steps:
 
 1. download brik
-2. include brik in your <head> as the first stylesheet
+2. include brik in your &lt;head&gt; as the first stylesheet
 3. use brik as much as possible without writing your own class and css
 
 That's it, enjoy.
