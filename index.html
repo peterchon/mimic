@@ -15,11 +15,11 @@
 				<h1 class="margin-0">Brik.</h1>
 			</header>
 			<section class="padding-50">
-				<p>Brik isn't a new framework, it's simply an idea.</p>
-				<p>Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it my own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
+				<h5>Brik isn't a new framework, it's simply an idea.</h5>
+				<p class="margin-top-20">Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it my own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
 				<p>Like a lot of devs, I have to work with legacy codes. Codes that are written with the best of intentions (initially.) Most of my time is spend hunting down that one rogue class or inherited styles in an endless sea of stylesheets.</p>
 				<p>I've been there before, starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
-				<p>After going through the same insanity over and over again, I started to think differently. Why not use the DOM class name to build a style? Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name.</p>
+				<p>After going through the same insanity over and over again, I started to think differently. Why not use the DOM class name to build a style? Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name, and not have to touch the stylesheet.</p>
 				<p><strong>Example:</strong></p>
 				<div class="example">
 					<div class="border display-block padding-20 margin-bottom-10">
@@ -42,10 +42,10 @@
 				<p class="margin-top-20">Which is okay. As I mentioned above, brik isn't a framework, it's an idea. It's a chance for you to try something new. It's something that I tried on my own projects and felt that it was worth sharing. Heck, you can even build your own brik if you desire.</p>
 				
 				<h4>Fine! Show me this brik of yours.</h4>
-				
+				<p class="margin-top-20">Cool. It'll only take 5 minute, I promise.</p>				
 			</section>
 			
-			<section class="padding-50">
+			<section class="padding-50 border-top">
 				<p><strong class="display-block margin-bottom-10">First things first, the grid.</strong>
 				Grid is the foundation of all modern design. Brik offers the usual 12-grid system with a left-margin between the spans.</p>				
 				
@@ -125,7 +125,7 @@
 				<div class="grid margin-top-20">
 					<div class="span12 radius-5 padding-5">12</div>
 				</div>
-				
+
 				<p class="margin-top-40"><strong>Offsets? we got that too</strong> <small>Trailing '-#' is the offset, i.e. 1-10 would be span1 offset10</small></p>
 				<div class="grid">
 					<div class="span2 offset9 radius-5 padding-5">1-10</div>
@@ -142,8 +142,23 @@
 					<div class="span2 offset3 radius-5 padding-5">2-3</div>
 					<div class="span2 radius-5 padding-5">2</div>
 				</div>
-				
-				<p class="margin-top-40"><strong>how about multiple grids inside one parent container?</strong> <small>Why anyone would ever do this? I've no clue.</small></p>
+
+				<p class="margin-top-40"><strong>Nested? Sure.</strong></p>
+				<div class="grid">
+					<div class="span9 radius-5 padding-5 border grid">
+						<div class="span5 radius-5 border padding-5">span5</div>
+						<div class="span7 radius-5 border padding-5 grid">
+							<div class="span4 offset5 radius-5 border padding-5">span4 offset5</div>
+							<div class="span3 radius-5 border padding-5 grid">span3</div>
+						</div>						
+					</div>
+					<div class="span3 radius-5 padding-5 border grid">
+						<div class="span6 radius-5 border padding-5">span6</div>
+						<div class="span6 radius-5 border padding-5 grid">span6</div>						
+					</div>
+				</div>
+												
+				<p class="margin-top-40"><strong>how about multiple grids inside one parent container?</strong> <small>I sometime use this when building HTML using a for-loop.</small></p>
 					
 				<div class="grid margin-top-20">
 					<div class="span8 radius-5 padding-5">8</div>
