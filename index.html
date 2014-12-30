@@ -12,36 +12,42 @@
 		
 		<div class="max-1024 adjust-center">
 			<header class="heading padding-50 border-bottom">
-				<p class="margin-0">Brik was built for CMS.</p>
+				<h1 class="margin-0">Brik.</h1>
 			</header>
 			<section class="padding-50">
-				<p>The problem with stylesheet is that you have to find the style and write additional classes to override the current class, or worst, <code class="red">!important</code> it. What are we animals? There's got to be a better way!</p>
-				
-				<p>Styling should be simple. Extending existing styles should be even simpler. Imagine looking at the paragraph and seeing: <code>class="padding-50"</code>. What would that tell you? Or what if you saw a heading with: <code>class="size-4em"</code>? Wouldn't this be easier to understand? Wouldn't this be easier to modify than to go hunting for <code>class="my-new-heading-V2_Final"</code>?</p>
-				
-				<p>You're probably thinking: "that's way too many classes to write out!" And, yes, you're right. But if you think of all the little minor adjustments that you do on a daily basis, there's not that many.</p>
-				
-				<p>If you have a pre-defined unit of measurement for padding or margin (5s, 10s, or 12s), you can make those in to a class. This means that even if you have defined styles that uses a stylesheet, you can always override them using Brik.</p>
-				<p><strong>For example:</strong></p>
+				<p>Brik isn't a new framework, it's simply an idea.</p>
+				<p>Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it my own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
+				<p>Like a lot of devs, I have to work with legacy codes. Codes that are written with the best of intentions (initially.) Most of my time is spend hunting down that one rogue class or inherited styles in an endless sea of stylesheets.</p>
+				<p>I've been there before, starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
+				<p>After going through the same insanity over and over again, I started to think differently. Why not use the DOM class name to build a style? Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name.</p>
+				<p><strong>Example:</strong></p>
 				<div class="example">
-					<p class="margin-bottom-10">Let say you have a stylesheet with a <code>p {margin-bottom:20px;}</code> but want the last one to be <code>p {margin-bottom:0;}</code>. Of course you can use the <code>:last-child</code> property, but what if this was a author in CMS that doesn't know or have limited access?</p>
-					<code class="border display-block padding-20">
-						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
-						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
-						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>											
-					</code>
+					<div class="border display-block padding-20 margin-bottom-10">
+						<p>This would be a usual paragraph with a defined class that specifies a margin-bottom of 20px.</p>
+					</div>					
+					<div class="border display-block padding-20 margin-bottom-10">
+						<p class="margin-0">This would be the same paragraph but with a class of "margin-0".</p>
+					</div>
 					
-					<p class="margin-top-20 margin-bottom-10">Wouldn't it be great if you can give them the option of making quick changes like this? Without having to worry about anyone overriding your default style?</p>
-					<code class="border display-block padding-20">
-						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
-						<p>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>											
-						<p class="margin-0">&lt;p class="margin-0"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
-					</code>
+				<p class="margin-0 margin-top-20">One of the advantages of using a system like brik is that you can always tell how the element is going to look without having to render it. If you see this code:</p>
+				<code class="padding-20 display-block">&lt;p class=&quot;margin-top-20 bg-color-black color-white align-right&quot;&gt;Can you guess my style?&lt;/p&gt;</code>
+				<p>Would you have any question as to how that paragraph would render?</p>
+				
+				<h2>OMG, that's a lot of classes.</h2>
+				<p class="margin-top-20">Listen, I'm not saying abandon all defined styles. I'm simply saying, make things more modular.</p>
+				<p>This is especially true when you have to deal with multiple authors in a CMS environment. Most authors don't understanding DOM targeting, nor do they care. Most of the time, they just want to make that one thing go away or be able to add a little more padding (which is why you see so many &lt;br&gt;s.</p>
+				<p>What about when you can't make changes to the live servers without doing a build? Build usually means QA, and QA usually means more time than what it's worth.</p>
+				
+				<h3>IDK, I'm still not convined.</h3>
+				<p class="margin-top-20">Which is okay. As I mentioned above, brik isn't a framework, it's an idea. It's a chance for you to try something new. It's something that I tried on my own projects and felt that it was worth sharing. Heck, you can even build your own brik if you desire.</p>
+				
+				<h4>Fine! Show me this brik of yours.</h4>
+				
 			</section>
 			
 			<section class="padding-50">
-				<p><strong>First things first, the grid.</strong></p>
-				<p>Grid is the foundation of all modern css foundations. Brik is no different, it uses the usual 12-grid system with a 2% margin between the spans, much like twitter bootstrap.</p>				
+				<p><strong class="display-block margin-bottom-10">First things first, the grid.</strong>
+				Grid is the foundation of all modern design. Brik offers the usual 12-grid system with a left-margin between the spans.</p>				
 				
 				<div class="grid">
 					<div class="span1 radius-5 padding-5">1</div>
@@ -120,24 +126,25 @@
 					<div class="span12 radius-5 padding-5">12</div>
 				</div>
 				
-				<p class="margin-top-40"><strong>Offsets? we got that too</strong></p>
+				<p class="margin-top-40"><strong>Offsets? we got that too</strong> <small>Trailing '-#' is the offset, i.e. 1-10 would be span1 offset10</small></p>
 				<div class="grid">
-					<div class="span2 offset9 radius-5 padding-5">1 o10</div>
+					<div class="span2 offset9 radius-5 padding-5">1-10</div>
 					<div class="span1 radius-5 padding-5">1</div>
 				</div>
 				
 				<div class="grid margin-top-20">
-					<div class="span10 offset1 radius-5 padding-5">10 offset1</div>
+					<div class="span10 offset1 radius-5 padding-5">10-1</div>
 					<div class="span1 radius-5 padding-5">1</div>
 				</div>
 
 				<div class="grid margin-top-20">
-					<div class="span4 offset1 radius-5 padding-5">4 offset1</div>
-					<div class="span2 offset3 radius-5 padding-5">2 offset3</div>
+					<div class="span4 offset1 radius-5 padding-5">4-1</div>
+					<div class="span2 offset3 radius-5 padding-5">2-3</div>
 					<div class="span2 radius-5 padding-5">2</div>
 				</div>
 				
-				<p class="margin-top-40"><strong>how about multiple grids inside one parent container?</strong></p>
+				<p class="margin-top-40"><strong>how about multiple grids inside one parent container?</strong> <small>Why anyone would ever do this? I've no clue.</small></p>
+					
 				<div class="grid margin-top-20">
 					<div class="span8 radius-5 padding-5">8</div>
 					<div class="span4 radius-5 padding-5">4</div>
