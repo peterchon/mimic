@@ -12,14 +12,14 @@
 		
 		<div class="max-1024 adjust-center">
 			<header class="heading padding-50 border-bottom">
-				<h1 class="margin-0">Mimic.</h1>
+				<h1 class="margin-0">Mimic</h1>
 			</header>
 			<section class="padding-50">
-				<h5>Mimic isn't a new framework, it's simply an idea.</h5>
+				<h2>Mimic isn't a new framework, it's simply <em>how</em> I write css.</h2>
 				<p class="margin-top-20">Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it my own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
-				<p>Like a lot of devs, I have to work with legacy codes. Codes that are written with the best of intentions (initially.) Most of my time is spend hunting down that one rogue class or inherited styles in an endless sea of stylesheets.</p>
-				<p>I've been there before, starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
-				<p>After going through the same insanity over and over again, I started to think differently. Why not use the DOM class name to build a style? Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name, and not have to touch the stylesheet.</p>
+				<p>I work with a lot legacy codes. Most are written with the best of intentions (initially.) This means that most of my day is spent hunting down that one rogue class or inherited styles.</p>
+				<p>I'm guilty of it myself - starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
+				<p>After going through the same insanity over and over again, I started to think "Why not use CSS property name as my class name?" Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name.</p>
 				<p><strong>Example:</strong></p>
 				<div class="example">
 					<div class="border display-block padding-20 margin-bottom-10">
@@ -33,21 +33,18 @@
 				<code class="padding-20 display-block">&lt;p class=&quot;margin-top-20 bg-color-black color-white align-right&quot;&gt;Can you guess my style?&lt;/p&gt;</code>
 				<p>Would you have any question as to how that paragraph would render?</p>
 				
-				<h2>OMG, that's a lot of classes.</h2>
-				<p class="margin-top-20">Listen, I'm not saying abandon all defined styles. I'm simply saying, make things more modular.</p>
-				<p>This is especially true when you have to deal with multiple authors in a CMS environment. Most authors don't understanding DOM targeting, nor do they care. Most of the time, they just want to make that one thing go away or be able to add a little more padding (which is why you see so many &lt;br&gt;s.</p>
-				<p>What about when you can't make changes to the live servers without doing a build? Build usually means QA, and QA usually means more time than what it's worth.</p>
+				<h3>&ldquo;That's a lot of classes to write.&rdquo;</h3>
+				<p class="margin-top-20">Maybe. But from my experience, most time I write CSS to over-write existing styles. And all of the CSS-classes are written with just one property. If it needs to be extended, then you can always write a custom CSS class.</p>
 				
-				<h3>IDK, I'm still not convined.</h3>
-				<p class="margin-top-20">Which is okay. As I mentioned above, Mimic isn't a framework, it's an idea. It's a chance for you to try something new. It's something that I tried on my own projects and felt that it was worth sharing. Heck, you can even build your own Mimic if you desire.</p>
+				<p class="margin-top-20">Again, this is just how <em>I</em> started to write my css. If you don't like it, I'd recommend that you stop reading here.</p>
 				
-				<h4>Fine! Show me this Mimic of yours.</h4>
-				<p class="margin-top-20">Cool. It'll only take 5 minute, I promise.</p>				
+				<p class="margin-top-20">Still reading? awesome. So, let's get to it.</p>
 			</section>
 			
 			<section class="padding-50 border-top">
-				<p><strong class="display-block margin-bottom-10">First things first, the grid.</strong>
-				Grid is the foundation of all modern design. Mimic offers the usual 12-grid system with a left-margin between the spans.</p>				
+				<p class="margin-0"><strong class="display-block margin-bottom-10">First, the grid.</strong>
+				Mimic uses the a 12-grid system with a left-margin between the spans.</p>
+				<p>There are many grids like it, but this is mine.</p>				
 				
 				<div class="grid">
 					<div class="span1 radius-5 padding-5">1</div>
@@ -126,24 +123,43 @@
 					<div class="span12 radius-5 padding-5">12</div>
 				</div>
 
-				<p class="margin-top-40"><strong>Offsets? we got that too</strong> <small>Trailing '-#' is the offset, i.e. 1-10 would be span1 offset10</small></p>
+				<p class="margin-top-40"><strong>Offsets &mdash;</strong> <small>Trailing '-#' is the offset, i.e. 1-10 would be span1 offset10</small></p>
+				<div class="border display-block padding-20 margin-bottom-10">
+				<p class="padding-20 margin-0">
+					<code class="display-block">&lt;p class=&quot;span2 offset9&quot;&gt;...&lt;/p&gt;</code>
+					<code class="display-block">&lt;p class=&quot;span1&quot;&gt;...&lt;/p&gt;</code>
+				</p>
+				</div>					
 				<div class="grid">
-					<div class="span2 offset9 radius-5 padding-5">1-10</div>
+					<div class="span2 offset9 radius-5 padding-5">2-10</div>
 					<div class="span1 radius-5 padding-5">1</div>
 				</div>
 				
+				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
+					<p class="padding-20 margin-0">
+						<code class="display-block">&lt;p class=&quot;span10 offset1&quot;&gt;...&lt;/p&gt;</code>
+						<code class="display-block">&lt;p class=&quot;span1&quot;&gt;...&lt;/p&gt;</code>
+					</p>
+				</div>
 				<div class="grid margin-top-20">
 					<div class="span10 offset1 radius-5 padding-5">10-1</div>
 					<div class="span1 radius-5 padding-5">1</div>
 				</div>
 
+				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
+					<p class="padding-20 margin-0">
+						<code class="display-block">&lt;p class=&quot;span4 offset1&quot;&gt;...&lt;/p&gt;</code>
+						<code class="display-block">&lt;p class=&quot;span2 offset3&quot;&gt;...&lt;/p&gt;</code>
+						<code class="display-block">&lt;p class=&quot;span2&quot;&gt;...&lt;/p&gt;</code>
+					</p>
+				</div>
 				<div class="grid margin-top-20">
 					<div class="span4 offset1 radius-5 padding-5">4-1</div>
 					<div class="span2 offset3 radius-5 padding-5">2-3</div>
 					<div class="span2 radius-5 padding-5">2</div>
 				</div>
 
-				<p class="margin-top-40"><strong>Nested? Sure.</strong></p>
+				<p class="margin-top-40"><strong>Nested</strong></p>
 				<div class="grid">
 					<div class="span9 radius-5 padding-5 border grid">
 						<div class="span5 radius-5 border padding-5">span5</div>
@@ -158,7 +174,7 @@
 					</div>
 				</div>
 												
-				<p class="margin-top-40"><strong>how about multiple grids inside one parent container?</strong> <small>I sometime use this when building HTML using a for-loop.</small></p>
+				<p class="margin-top-40"><strong>Continuing grids &mdash;</strong> <small>When building HTML lists</small></p>
 					
 				<div class="grid margin-top-20">
 					<div class="span8 radius-5 padding-5">8</div>
