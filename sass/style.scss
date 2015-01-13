@@ -1,3 +1,5 @@
+$green: #12B26F;
+
 .heading {
 	p {
 		font-size:1.2em;
@@ -30,7 +32,7 @@ p {
 }
 
 [class^="span"] {
-	background-color:#e9e9e9;
+	background-color:rgba(18, 178, 111, 0.1);
 	text-align:center;
 }
 
@@ -38,4 +40,8 @@ p {
 	h#{$i} {
 		font-size: 3em - .5 * $i
 	}
+}
+
+.green {
+	color:$green;
 }
