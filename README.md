@@ -14,3 +14,5 @@ Applying brik to your project is simple, just follow these 3 easy steps:
 3. use brik as much as possible without writing your own class and css
 
 That's it, enjoy.
+
+see it here: http://peterchon.github.io/mimic/
