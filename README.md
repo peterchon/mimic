@@ -1,4 +1,4 @@
-brik.css
+mimic.css
 ==
 
 The biggest problem I see with CMS is that people try to use it for something that it wasn't designed to do. I mean, why the hell are you trying to build a custom multi-layout website with a blogging platform? This usually means that you have multiple templates with crazy-ass-long class names like "template-z-section2-with-red-heading" just so you can keep some sort of organization going (until the next guy comes along and goes "WTF!") This also adds to the aggrivation of content authors wanting to make simple stylistic changes but can't, since it requires updates in the core stylesheet.
