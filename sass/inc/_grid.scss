@@ -1,7 +1,6 @@
-.grid {
-	@extend .cf;
+.row\:12 {
 	@for $i from 1 through 12 {
-		.span\:#{$i} {
+		.col\:#{$i} {
 			float:left;
 			margin-left:2%;
 			width:(100% - (2 * (12 / $i - 1))) / (12 / $i);
@@ -10,21 +9,61 @@
 			margin-right:(100% - (2 * (12 / $i - 1))) / (12 / $i) + 2;
 		}
 	}
-	[class^='span']:first-child,
-	.restart-grid {
-		margin-left:0;
+}
+.row\:10 {
+	@for $i from 1 through 10 {
+		.col\:#{$i} {
+			float:left;
+			margin-left:2%;
+			width:(100% - (2 * (10 / $i - 1))) / (10 / $i);
+		}
+		.offset\:#{$i} {
+			margin-right:(100% - (2 * (10 / $i - 1))) / (10 / $i) + 2;
+		}
 	}
 }
+.row\:7 {
+	@for $i from 1 through 7 {
+		.col\:#{$i} {
+			float:left;
+			margin-left:2%;
+			width:(100% - (2 * (7 / $i - 1))) / (7 / $i);
+		}
+		.offset\:#{$i} {
+			margin-right:(100% - (2 * (7 / $i - 1))) / (7 / $i) + 2;
+		}
+	}	
+}
+.row\:5 {
+	@for $i from 1 through 5 {
+		.col\:#{$i} {
+			float:left;
+			margin-left:2%;
+			width:(100% - (2 * (5 / $i - 1))) / (5 / $i);
+		}
+		.offset\:#{$i} {
+			margin-right:(100% - (2 * (5 / $i - 1))) / (5 / $i) + 2;
+		}
+	}	
+}
 
-@media screen and (max-width:600px) {
-	.grid {
-		[class^="span"] {
+[class^="row"] {
+	@extend .cf;	
+	[class^='col']:first-child,
+	.restart-grid {
+		margin-left:0;
+	}	
+}
+
+@media screen and (max-width:736px) {
+[class^="row"] {
+		[class^="col"] {
 			margin-left:0;
 			margin-top:10px;
 			float:none;
 			width:100%;
 		}
-		[class^='span']:first-child {
+		[class^='col']:first-child {
 			margin-top:0;
 		}
 	}

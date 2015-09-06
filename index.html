@@ -37,331 +37,407 @@
 				
 				<p class="margin-top:20">Maybe. But from my experience, most time I write CSS to over-write existing styles. And all of the CSS-classes are written with just one property. If it needs to be extended, then you can always write a custom CSS class.</p>
 				
-				<p class="margin-top:20">Again, this is just how <em>I</em> started to write my css. If you don't like it, I recommend you checkout <a href="http://getbootstrap.com/">bootstrap</a>.</p>
+				<p class="margin-top:20">Again, this is just how I started to write my css. If you don't like it, I recommend you checkout <a href="http://getbootstrap.com/">bootstrap</a>.</p>
 				
 				<p class="margin-top:20">Still reading? awesome. So, let's get to it.</p>
 			</section>
 			
 			<section class="padding:50 border:top">
-				<p class="margin:0"><strong class="display:block margin-bottom:10 green">First, the grid.</strong>
-				Mimic uses the a 12-grid system with a left-margin between the span:s.</p>
-				<p>There are many grids like it, but this is mine.</p>				
+				<p class="margin:0"><strong class="display:block margin-bottom:10 green">First, the grids.</strong>
+				Mimic gives you a choice of 12/10/7/5 grid system with an 2% left-margin between the columns. Why so many? Because I like choices.</p>		
 				
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+							&lt;div class=&quot;row:10&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:2 border-radius:5 padding:5">2</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
+				<div class="row:10 margin-top:20">
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
+							&lt;div class=&quot;row:7&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:3 border-radius:5 padding:5">3</div>
-					<div class="span:3 border-radius:5 padding:5">3</div>
-					<div class="span:3 border-radius:5 padding:5">3</div>
-					<div class="span:3 border-radius:5 padding:5">3</div>
+				<div class="row:7 margin-top:20">
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
+							&lt;div class=&quot;row:5&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:4 border-radius:5 padding:5">4</div>
-					<div class="span:4 border-radius:5 padding:5">4</div>
-					<div class="span:4 border-radius:5 padding:5">4</div>
+				<div class="row:5 margin-top:20">
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+				</div>
+				
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+							&lt;/div&gt;	
+						</code>
+					</p>
+				</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;5&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;5&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:3&quot;&gt;3&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:5 border-radius:5 padding:5">5</div>
-					<div class="span:5 border-radius:5 padding:5">5</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:3 border-radius:5 padding:5">3</div>
+					<div class="col:3 border-radius:5 padding:5">3</div>
+					<div class="col:3 border-radius:5 padding:5">3</div>
+					<div class="col:3 border-radius:5 padding:5">3</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;6&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;6&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:4&quot;&gt;4&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:4&quot;&gt;4&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:4&quot;&gt;4&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:6 border-radius:5 padding:5">6</div>
-					<div class="span:6 border-radius:5 padding:5">6</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:4 border-radius:5 padding:5">4</div>
+					<div class="col:4 border-radius:5 padding:5">4</div>
+					<div class="col:4 border-radius:5 padding:5">4</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:7&quot;&gt;7&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;5&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:5&quot;&gt;5&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:5&quot;&gt;5&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:7 border-radius:5 padding:5">7</div>
-					<div class="span:5 border-radius:5 padding:5">5</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:5 border-radius:5 padding:5">5</div>
+					<div class="col:5 border-radius:5 padding:5">5</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:8&quot;&gt;8&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:6&quot;&gt;6&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:6&quot;&gt;6&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:8 border-radius:5 padding:5">8</div>
-					<div class="span:4 border-radius:5 padding:5">4</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:6 border-radius:5 padding:5">6</div>
+					<div class="col:6 border-radius:5 padding:5">6</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:9&quot;&gt;9&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:7&quot;&gt;7&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:5&quot;&gt;5&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:9 border-radius:5 padding:5">9</div>
-					<div class="span:3 border-radius:5 padding:5">3</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:7 border-radius:5 padding:5">7</div>
+					<div class="col:5 border-radius:5 padding:5">5</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:10&quot;&gt;10&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:8&quot;&gt;8&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:4&quot;&gt;4&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:10 border-radius:5 padding:5">10</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:8 border-radius:5 padding:5">8</div>
+					<div class="col:4 border-radius:5 padding:5">4</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:11&quot;&gt;11&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:9&quot;&gt;9&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:3&quot;&gt;3&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:11 border-radius:5 padding:5">11</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:9 border-radius:5 padding:5">9</div>
+					<div class="col:3 border-radius:5 padding:5">3</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:12&quot;&gt;12&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:10&quot;&gt;10&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:12 border-radius:5 padding:5">12</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:10 border-radius:5 padding:5">10</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
 				</div>
 
-				<p class="margin-top:40"><strong class="green">offsets &mdash;</strong> <small>Trailing ':#' is the offset amount, i.e. 1:10 would be span:1 offset:10</small></p>
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:11&quot;&gt;11&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
+							&lt;/div&gt;	
+						</code>
+					</p>
+				</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:11 border-radius:5 padding:5">11</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
+				</div>
+
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:12&quot;&gt;12&lt;/div&gt;<br>
+							&lt;/div&gt;	
+						</code>
+					</p>
+				</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:12 border-radius:5 padding:5">12</div>
+				</div>
+
+				<p class="margin-top:40"><strong class="green">offset12s &mdash;</strong> <small>Trailing ':#' is the offset12 amount, i.e. 1:10 would be col:1 offset:10</small></p>
 				<div class="border display:block padding:20 margin-bottom:10">
 				<p class="padding:20 margin:0">
 					<code class="display:block">
-						&lt;div class=&quot;grid&quot;&gt;<br>
-						&nbsp;&nbsp;&lt;div class=&quot;span:2 offset:9&quot;&gt;&hellip;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;&hellip;&lt;/div&gt;<br>
+						&lt;div class=&quot;row:12&quot;&gt;<br>
+						&nbsp;&nbsp;&lt;div class=&quot;col:2 offset:9&quot;&gt;&hellip;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;&hellip;&lt;/div&gt;<br>
 						&lt;/div&gt;
 					</code>
 				</p>
 				</div>					
-				<div class="grid">
-					<div class="span:2 offset:9 border-radius:5 padding:5">2:10</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
+				<div class="row:12">
+					<div class="col:2 offset:9 border-radius:5 padding:5">2:10</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
 				</div>
 				
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span:10 offset:1&quot;&gt;&hellip;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;col:10 offset:1&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;&hellip;&lt;/div&gt;<br>
 							&lt;/div&gt;
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:10 offset:1 border-radius:5 padding:5">10-1</div>
-					<div class="span:1 border-radius:5 padding:5">1</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:10 offset:1 border-radius:5 padding:5">10-1</div>
+					<div class="col:1 border-radius:5 padding:5">1</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span:4 offset:1&quot;&gt;&hellip;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span:2 offset:3&quot;&gt;&hellip;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;col:4 offset:1&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;col:2 offset:3&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;&hellip;&lt;/div&gt;<br>
 							&lt;/div&gt;
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:4 offset:1 border-radius:5 padding:5">4-1</div>
-					<div class="span:2 offset:3 border-radius:5 padding:5">2-3</div>
-					<div class="span:2 border-radius:5 padding:5">2</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:4 offset:1 border-radius:5 padding:5">4-1</div>
+					<div class="col:2 offset:3 border-radius:5 padding:5">2-3</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
 				</div>
 
 				<p class="margin-top:40"><strong class="green">Nested</strong></p>
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span:9 grid&quot;&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;&hellip;&lt;/div&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:7 grid&quot;&gt;<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:4 offset:5&quot;&gt;&hellip;&lt;/div&gt;<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;col:9 row:12&quot;&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col:5&quot;&gt;&hellip;&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col:7 row:12&quot;&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col:4 offset:5&quot;&gt;&hellip;&lt;/div&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col:3&quot;&gt;&hellip;&lt;/div&gt;<br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
 								&nbsp;&nbsp;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:3 grid&quot;&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;&hellip;&lt;/div&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;&hellip;&lt;/div&gt;<br>			
+								&nbsp;&nbsp;&lt;div class=&quot;col:3 row:12&quot;&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col:6&quot;&gt;&hellip;&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col:6&quot;&gt;&hellip;&lt;/div&gt;<br>			
 								&nbsp;&nbsp;&lt;/div&gt;<br>
 							&lt;/div&gt;
 						</code>
 					</p>
 				</div>
-				<div class="grid">
-					<div class="span:9 border-radius:5 padding:5 grid">
-						<div class="span:5 border-radius:5 padding:5">span:5</div>
-						<div class="span:7 border-radius:5 padding:5 grid">
-							<div class="span:4 offset:5 border-radius:5 padding:5">span:4 offset:5</div>
-							<div class="span:3 border-radius:5 padding:5">span:3</div>
+				<div class="row:12">
+					<div class="col:9 border-radius:5 padding:5 row:12">
+						<div class="col:5 border-radius:5 padding:5">col:5</div>
+						<div class="col:7 border-radius:5 padding:5 row:12">
+							<div class="col:4 offset:5 border-radius:5 padding:5">col:4 offset:5</div>
+							<div class="col:3 border-radius:5 padding:5">col:3</div>
 						</div>						
 					</div>
-					<div class="span:3 border-radius:5 padding:5 grid">
-						<div class="span:6 border-radius:5 padding:5">span:6</div>
-						<div class="span:6 border-radius:5 padding:5">span:6</div>						
+					<div class="col:3 border-radius:5 padding:5 row:12">
+						<div class="col:6 border-radius:5 padding:5">col:6</div>
+						<div class="col:6 border-radius:5 padding:5">col:6</div>						
 					</div>
 				</div>
 												
-				<p class="margin-top:40"><strong class="green">Continuing grids &mdash;</strong> <small>When building HTML lists</small></p>
+				<p class="margin-top:40"><strong class="green">Continuing row:12s &mdash;</strong> <small>When building HTML lists</small></p>
 					
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:8&quot;&gt;&hellip;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;&hellip;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:4 restart-grid&quot;&gt;&hellip;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span:8&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&lt;div class=&quot;row:12&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:8&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:4&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:4 restart-row:12&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:8&quot;&gt;&hellip;&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top:20">
-					<div class="span:8 border-radius:5 padding:5">8</div>
-					<div class="span:4 border-radius:5 padding:5">4</div>
-					<div class="span:4 border-radius:5 padding:5 restart-grid">4: add "restart-grid" class</div>
-					<div class="span:8 border-radius:5 padding:5">8</div>
+				<div class="row:12 margin-top:20">
+					<div class="col:8 border-radius:5 padding:5">8</div>
+					<div class="col:4 border-radius:5 padding:5">4</div>
+					<div class="col:4 border-radius:5 padding:5 restart-grid">4: add "restart-grid" class</div>
+					<div class="col:8 border-radius:5 padding:5">8</div>
 				</div>	
 			</section>
 		</div>

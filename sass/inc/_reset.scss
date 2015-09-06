@@ -40,6 +40,7 @@ div, ul, ol, li, table, thead, tbody, tfoot, tr, td, th {
 
 h1, h2, h3, h4, h5, h6, p, blockquote {
 	@extend .reset;
+	line-height:1.42em;
 }
 
 @for $i from 1 through 6 {
