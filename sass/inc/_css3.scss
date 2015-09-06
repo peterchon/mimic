@@ -1,19 +1,21 @@
-.radius-3 {
-	@include border-radius(3px);
+@for $i from 0 through 100 {
+	.border-radius\:#{$i} {
+		@include border-radius(1px * $i);
+	}
+	.border-top-left-radius\:#{$i} {
+		@include border-top-left-radius(1px * $i);
+	}
+	.border-top-right-radius\:#{$i} {
+		@include border-top-right-radius(1px * $i);
+	}
+	.border-bottom-right-radius\:#{$i} {
+		@include border-bottom-right-radius(1px * $i);
+	}
+	.border-bottom-left-radius\:#{$i} {
+		@include border-top-left-radius(1px * $i);
+	}			
 }
 
-.radius-5 {
-	@include border-radius(5px);
-}
-
-.radius-10 {
-	@include border-radius(10px);
-}
-
-.radius-20 {
-	@include border-radius(20px);
-}
-
-.radius-360 {
+.border-radius\:360 {
 	@include border-radius(100%);
 }

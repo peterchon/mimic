@@ -8,7 +8,7 @@ table {
 			background-color:$light-gray;
 		}
 	}
-	&.table-border-top {
+	&.table-border\:top {
 		tr {
 			border-top:1px solid #ccc;
 			&:first-child {
@@ -17,7 +17,7 @@ table {
 		}
 		border-bottom:1px solid $light-gray;
 	}
-	&.table-border-bottom {
+	&.table-border:\bottom {
 		tr {
 			border-bottom:1px solid $light-gray;
 		}		

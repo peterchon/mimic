@@ -10,357 +10,358 @@
 	</head>
 	<body>
 		
-		<div class="max-1024 adjust-center">
-			<header class="heading padding-50 border-bottom">
-				<h1 class="margin-0">Mimic</h1>
+		<div class="max:1024 adjust-center">
+			<header class="heading padding:50 border:bottom">
+				<h1 class="margin:0">Mimic</h1>
 			</header>
-			<section class="padding-50">
-				<h2>Mimic isn't a framework, it's an evolved inline-css.</h2>
-				<p class="margin-top-20">Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it my own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
-				<p>I work with a lot legacy codes. Most are written with the best of intentions (initially.) This means that most of my day is spent hunting down that one rogue class or inherited styles.</p>
-				<p>I'm guilty of it myself - starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
-				<p>After going through the same insanity over and over again, I started to think "Why not use CSS property name as my class name?" Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name.</p>
-				<p><strong>Example:</strong></p>
-				<div class="example">
-					<div class="border display-block padding-20 margin-bottom-10">
-						<p>This would be a usual paragraph with a defined class that specifies a margin-bottom of 20px.</p>
+			<section class="padding:50">
+				<h2>Mimic isn't a framework, it's inline-css, evolved.</h2>
+				<p class="margin-top:20">Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it your own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
+				<p class="margin-top:20">I work with a lot legacy codes. Most are written with the best of intentions (initially.) This means that most of my day is spent hunting down that one rogue class or inherited styles.</p>
+				<p class="margin-top:20">I'm guilty of it myself - starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
+				<p class="margin-top:20">After going through the same insanity over and over again, I started to think "Why not use CSS property name as my class name?" Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name.</p>
+				<p class="margin-top:20"><strong>Example:</strong></p>
+				<div class="example margin-top:20">
+					<div class="border display:block padding:20 margin-bottom:10">
+						<p class="padding-bottom:50">This would be a usual paragraph with a defined class that specifies a padding-bottom of 50px.</p>
 					</div>					
-					<div class="border display-block padding-20 margin-bottom-10">
-						<p class="margin-0">This would be the same paragraph but with a class of "margin-0".</p>
+					<div class="border display:block padding:20 margin-bottom:10">
+						<p class="padding:0">This would be the same paragraph but with a class of "padding:0".</p>
 					</div>
 					
-				<p class="margin-0 margin-top-20">One of the advantages of using a system like Mimic is that you can always tell how the element is going to look without having to render it. If you see this code:</p>
-				<code class="padding-20 display-block">&lt;p class=&quot;margin-top-20 bg-color-black color-white align-right&quot;&gt;Can you guess my style?&lt;/p&gt;</code>
+				<p class="margin:0 margin-top:20">One of the advantages of using a system like Mimic is that you can always tell how the element is going to look without having to render it. If you see this code:</p>
+				<code class="padding:20 display:block">&lt;p class=&quot;margin-top:20 bg-color:black color:white align:right&quot;&gt;Can you guess my style?&lt;/p&gt;</code>
 				<p>Would you have any question as to how that paragraph would render?</p>
 				
-				<h3>&ldquo;That's a lot of classes to write.&rdquo;</h3>
-				<p class="margin-top-20">Maybe. But from my experience, most time I write CSS to over-write existing styles. And all of the CSS-classes are written with just one property. If it needs to be extended, then you can always write a custom CSS class.</p>
+				<h3 class="margin-top:20">&ldquo;That's a lot of classes to write.&rdquo;</h3>
 				
-				<p class="margin-top-20">Again, this is just how <em>I</em> started to write my css. If you don't like it, I recommend you checkout <a href="http://getbootstrap.com/">bootstrap</a>.</p>
+				<p class="margin-top:20">Maybe. But from my experience, most time I write CSS to over-write existing styles. And all of the CSS-classes are written with just one property. If it needs to be extended, then you can always write a custom CSS class.</p>
 				
-				<p class="margin-top-20">Still reading? awesome. So, let's get to it.</p>
+				<p class="margin-top:20">Again, this is just how <em>I</em> started to write my css. If you don't like it, I recommend you checkout <a href="http://getbootstrap.com/">bootstrap</a>.</p>
+				
+				<p class="margin-top:20">Still reading? awesome. So, let's get to it.</p>
 			</section>
 			
-			<section class="padding-50 border-top">
-				<p class="margin-0"><strong class="display-block margin-bottom-10 green">First, the grid.</strong>
-				Mimic uses the a 12-grid system with a left-margin between the spans.</p>
+			<section class="padding:50 border:top">
+				<p class="margin:0"><strong class="display:block margin-bottom:10 green">First, the grid.</strong>
+				Mimic uses the a 12-grid system with a left-margin between the span:s.</p>
 				<p>There are many grids like it, but this is mine.</p>				
 				
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid">
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
-					<div class="span1 radius-5 padding-5">1</div>
+				<div class="grid margin-top:20">
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span2 radius-5 padding-5">2</div>
-					<div class="span2 radius-5 padding-5">2</div>
-					<div class="span2 radius-5 padding-5">2</div>
-					<div class="span2 radius-5 padding-5">2</div>
-					<div class="span2 radius-5 padding-5">2</div>
-					<div class="span2 radius-5 padding-5">2</div>
+				<div class="grid margin-top:20">
+					<div class="span:2 border-radius:5 padding:5">2</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span3&quot;&gt;3&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span3&quot;&gt;3&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span3&quot;&gt;3&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span3 radius-5 padding-5">3</div>
-					<div class="span3 radius-5 padding-5">3</div>
-					<div class="span3 radius-5 padding-5">3</div>
-					<div class="span3 radius-5 padding-5">3</div>
+				<div class="grid margin-top:20">
+					<div class="span:3 border-radius:5 padding:5">3</div>
+					<div class="span:3 border-radius:5 padding:5">3</div>
+					<div class="span:3 border-radius:5 padding:5">3</div>
+					<div class="span:3 border-radius:5 padding:5">3</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span4&quot;&gt;4&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span4&quot;&gt;4&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span4&quot;&gt;4&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span4 radius-5 padding-5">4</div>
-					<div class="span4 radius-5 padding-5">4</div>
-					<div class="span4 radius-5 padding-5">4</div>
+				<div class="grid margin-top:20">
+					<div class="span:4 border-radius:5 padding:5">4</div>
+					<div class="span:4 border-radius:5 padding:5">4</div>
+					<div class="span:4 border-radius:5 padding:5">4</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span5&quot;&gt;5&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span5&quot;&gt;5&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;5&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;5&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span5 radius-5 padding-5">5</div>
-					<div class="span5 radius-5 padding-5">5</div>
-					<div class="span2 radius-5 padding-5">2</div>
+				<div class="grid margin-top:20">
+					<div class="span:5 border-radius:5 padding:5">5</div>
+					<div class="span:5 border-radius:5 padding:5">5</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span6&quot;&gt;6&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span6&quot;&gt;6&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;6&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;6&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span6 radius-5 padding-5">6</div>
-					<div class="span6 radius-5 padding-5">6</div>
+				<div class="grid margin-top:20">
+					<div class="span:6 border-radius:5 padding:5">6</div>
+					<div class="span:6 border-radius:5 padding:5">6</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span7&quot;&gt;7&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span5&quot;&gt;5&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:7&quot;&gt;7&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;5&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span7 radius-5 padding-5">7</div>
-					<div class="span5 radius-5 padding-5">5</div>
+				<div class="grid margin-top:20">
+					<div class="span:7 border-radius:5 padding:5">7</div>
+					<div class="span:5 border-radius:5 padding:5">5</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span8&quot;&gt;8&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span4&quot;&gt;4&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:8&quot;&gt;8&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;4&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span8 radius-5 padding-5">8</div>
-					<div class="span4 radius-5 padding-5">4</div>
+				<div class="grid margin-top:20">
+					<div class="span:8 border-radius:5 padding:5">8</div>
+					<div class="span:4 border-radius:5 padding:5">4</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span9&quot;&gt;9&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span3&quot;&gt;3&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:9&quot;&gt;9&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;3&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span9 radius-5 padding-5">9</div>
-					<div class="span3 radius-5 padding-5">3</div>
+				<div class="grid margin-top:20">
+					<div class="span:9 border-radius:5 padding:5">9</div>
+					<div class="span:3 border-radius:5 padding:5">3</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span10&quot;&gt;10&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:10&quot;&gt;10&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;2&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span10 radius-5 padding-5">10</div>
-					<div class="span2 radius-5 padding-5">2</div>
+				<div class="grid margin-top:20">
+					<div class="span:10 border-radius:5 padding:5">10</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span11&quot;&gt;11&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;1&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:11&quot;&gt;11&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;1&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span11 radius-5 padding-5">11</div>
-					<div class="span1 radius-5 padding-5">1</div>
+				<div class="grid margin-top:20">
+					<div class="span:11 border-radius:5 padding:5">11</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span12&quot;&gt;12&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:12&quot;&gt;12&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span12 radius-5 padding-5">12</div>
+				<div class="grid margin-top:20">
+					<div class="span:12 border-radius:5 padding:5">12</div>
 				</div>
 
-				<p class="margin-top-40"><strong class="green">Offsets &mdash;</strong> <small>Trailing '-#' is the offset, i.e. 1-10 would be span1 offset10</small></p>
-				<div class="border display-block padding-20 margin-bottom-10">
-				<p class="padding-20 margin-0">
-					<code class="display-block">
+				<p class="margin-top:40"><strong class="green">offsets &mdash;</strong> <small>Trailing ':#' is the offset amount, i.e. 1:10 would be span:1 offset:10</small></p>
+				<div class="border display:block padding:20 margin-bottom:10">
+				<p class="padding:20 margin:0">
+					<code class="display:block">
 						&lt;div class=&quot;grid&quot;&gt;<br>
-						&nbsp;&nbsp;&lt;div class=&quot;span2 offset9&quot;&gt;&hellip;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;&hellip;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;div class=&quot;span:2 offset:9&quot;&gt;&hellip;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;&hellip;&lt;/div&gt;<br>
 						&lt;/div&gt;
 					</code>
 				</p>
 				</div>					
 				<div class="grid">
-					<div class="span2 offset9 radius-5 padding-5">2-10</div>
-					<div class="span1 radius-5 padding-5">1</div>
+					<div class="span:2 offset:9 border-radius:5 padding:5">2:10</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
 				</div>
 				
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span10 offset1&quot;&gt;&hellip;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span1&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;span:10 offset:1&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;span:1&quot;&gt;&hellip;&lt;/div&gt;<br>
 							&lt;/div&gt;
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span10 offset1 radius-5 padding-5">10-1</div>
-					<div class="span1 radius-5 padding-5">1</div>
+				<div class="grid margin-top:20">
+					<div class="span:10 offset:1 border-radius:5 padding:5">10-1</div>
+					<div class="span:1 border-radius:5 padding:5">1</div>
 				</div>
 
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span4 offset1&quot;&gt;&hellip;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span2 offset3&quot;&gt;&hellip;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span2&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;span:4 offset:1&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;span:2 offset:3&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;span:2&quot;&gt;&hellip;&lt;/div&gt;<br>
 							&lt;/div&gt;
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span4 offset1 radius-5 padding-5">4-1</div>
-					<div class="span2 offset3 radius-5 padding-5">2-3</div>
-					<div class="span2 radius-5 padding-5">2</div>
+				<div class="grid margin-top:20">
+					<div class="span:4 offset:1 border-radius:5 padding:5">4-1</div>
+					<div class="span:2 offset:3 border-radius:5 padding:5">2-3</div>
+					<div class="span:2 border-radius:5 padding:5">2</div>
 				</div>
 
-				<p class="margin-top-40"><strong class="green">Nested</strong></p>
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<p class="margin-top:40"><strong class="green">Nested</strong></p>
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-							&nbsp;&nbsp;&lt;div class=&quot;span9 grid&quot;&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span5&quot;&gt;&hellip;&lt;/div&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span7 grid&quot;&gt;<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span4 offset5&quot;&gt;&hellip;&lt;/div&gt;<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span3&quot;&gt;&hellip;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class=&quot;span:9 grid&quot;&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:5&quot;&gt;&hellip;&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:7 grid&quot;&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:4 offset:5&quot;&gt;&hellip;&lt;/div&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:3&quot;&gt;&hellip;&lt;/div&gt;<br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
 								&nbsp;&nbsp;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span3 grid&quot;&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span6&quot;&gt;&hellip;&lt;/div&gt;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span6&quot;&gt;&hellip;&lt;/div&gt;<br>			
+								&nbsp;&nbsp;&lt;div class=&quot;span:3 grid&quot;&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;&hellip;&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;span:6&quot;&gt;&hellip;&lt;/div&gt;<br>			
 								&nbsp;&nbsp;&lt;/div&gt;<br>
 							&lt;/div&gt;
 						</code>
 					</p>
 				</div>
 				<div class="grid">
-					<div class="span9 radius-5 padding-5 grid">
-						<div class="span5 radius-5 padding-5">span5</div>
-						<div class="span7 radius-5 padding-5 grid">
-							<div class="span4 offset5 radius-5 padding-5">span4 offset5</div>
-							<div class="span3 radius-5 padding-5">span3</div>
+					<div class="span:9 border-radius:5 padding:5 grid">
+						<div class="span:5 border-radius:5 padding:5">span:5</div>
+						<div class="span:7 border-radius:5 padding:5 grid">
+							<div class="span:4 offset:5 border-radius:5 padding:5">span:4 offset:5</div>
+							<div class="span:3 border-radius:5 padding:5">span:3</div>
 						</div>						
 					</div>
-					<div class="span3 radius-5 padding-5 grid">
-						<div class="span6 radius-5 padding-5">span6</div>
-						<div class="span6 radius-5 padding-5">span6</div>						
+					<div class="span:3 border-radius:5 padding:5 grid">
+						<div class="span:6 border-radius:5 padding:5">span:6</div>
+						<div class="span:6 border-radius:5 padding:5">span:6</div>						
 					</div>
 				</div>
 												
-				<p class="margin-top-40"><strong class="green">Continuing grids &mdash;</strong> <small>When building HTML lists</small></p>
+				<p class="margin-top:40"><strong class="green">Continuing grids &mdash;</strong> <small>When building HTML lists</small></p>
 					
-				<div class="border display-block padding-20 margin-bottom-10 margin-top-20">
-					<p class="padding-20 margin-0">
-						<code class="display-block">
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
 							&lt;div class=&quot;grid&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span8&quot;&gt;&hellip;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span4&quot;&gt;&hellip;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span4 restart-grid&quot;&gt;&hellip;&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;span8&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:8&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:4&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:4 restart-grid&quot;&gt;&hellip;&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;span:8&quot;&gt;&hellip;&lt;/div&gt;<br>
 							&lt;/div&gt;	
 						</code>
 					</p>
 				</div>
-				<div class="grid margin-top-20">
-					<div class="span8 radius-5 padding-5">8</div>
-					<div class="span4 radius-5 padding-5">4</div>
-					<div class="span4 radius-5 padding-5 restart-grid">4: add "restart-grid" class</div>
-					<div class="span8 radius-5 padding-5">8</div>
+				<div class="grid margin-top:20">
+					<div class="span:8 border-radius:5 padding:5">8</div>
+					<div class="span:4 border-radius:5 padding:5">4</div>
+					<div class="span:4 border-radius:5 padding:5 restart-grid">4: add "restart-grid" class</div>
+					<div class="span:8 border-radius:5 padding:5">8</div>
 				</div>	
 			</section>
 		</div>

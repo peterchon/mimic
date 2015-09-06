@@ -1,12 +1,12 @@
 .grid {
 	@extend .cf;
 	@for $i from 1 through 12 {
-		.span#{$i} {
+		.span\:#{$i} {
 			float:left;
 			margin-left:2%;
 			width:(100% - (2 * (12 / $i - 1))) / (12 / $i);
 		}
-		.offset#{$i} {
+		.offset\:#{$i} {
 			margin-right:(100% - (2 * (12 / $i - 1))) / (12 / $i) + 2;
 		}
 	}

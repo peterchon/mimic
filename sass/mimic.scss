@@ -7,26 +7,38 @@
 @import 'inc/table';
 @import 'inc/form';
 
-.red {
-	color:red;
+@for $i from 0 through 100 {
+	.padding\:#{$i}  {
+		padding:1px * $i;
+	}		
+	.padding-top\:#{$i} {
+		padding-top:1px * $i;
+	}
+	.padding-right\:#{$i}  {
+		padding-right:1px * $i;
+	}
+	.padding-bottom\:#{$i}  {
+		padding-bottom:1px * $i;
+	}
+	.padding-left\:#{$i}  {
+		padding-left:1px * $i;
+	}			
 }
 
-.padding-10 {
-	padding:10px;
-}
-
-.padding-50 {
-	padding:50px;
-}
-
-.add-answers-mark:before {
-	content:'A:';
-}
-
-.margin-top-20 {
-	margin-top:20px;
-}
-
-.margin-0 {
-	margin:0;
+@for $i from 0 through 100 {
+	.margin\:#{$i}  {
+		margin:1px * $i;
+	}			
+	.margin-top\:#{$i}  {
+		margin-top:1px * $i;
+	}
+	.margin-right\:#{$i}  {
+		margin-right:1px * $i;
+	}
+	.margin-bottom\:#{$i}  {
+		margin-bottom:1px * $i;
+	}
+	.margin-left\:#{$i}  {
+		margin-left:1px * $i;
+	}		
 }

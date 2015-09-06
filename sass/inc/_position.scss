@@ -1,16 +1,16 @@
-.max-600 {
-	max-width:600px;
+.max\:736 {
+	max-width:736;
 }
 
-.max-960 {
-	max-width:960px;
+.max\:768 {
+	max-width:768;
 }
 
-.max-1024 {
+.max\:1024 {
 	max-width:1024px;
 }
 
-.max-1366 {
+.max\:1366 {
 	max-width:1366px;
 }
 
@@ -18,88 +18,83 @@
 	margin:0 auto;
 }
 
-.float-left {
+.float\:left {
 	float:left;
 }
 
-.float-right {
+.float\:right {
 	float:right;
 }
 
-.align-center {
+.align\:center {
 	text-align:center;
 }
 
-.align-right {
+.align\:right {
 	text-align:right;
 }
 
-.align-justify {
+.align\:justify {
 	text-align:justify;
 }
 
-.valign-top {
+.valign\:top {
 	vertical-align:top;
 }
 
-.valign-middle {
+.valign\:middle {
 	vertical-align:middle;
 }
 
-.valign-bottom {
+.valign\:bottom {
 	vertical-align:bottom;	
 }
 
-.valign-baseline {
+.valign\:baseline {
 	vertical-align:baseline;	
 }
 
-.position-relative {
+.position\:relative {
 	position: relative;
 }
 
-.position-absolute {
+.position\:absolute {
 	position: absolute;	
 }
 
-.position-fixed {
+.position\:fixed {
 	position: fixed;	
 }
 
-.left-0 {
-	left:0;
+@for $i from 0 through 100 {
+	.top\:0 {
+		top:1px * $i;
+	}
+	.bottom\:0 {
+		bottom:1px * $i;
+	}
+	.left\:0 {
+		left:1px * $i;
+	}
+	.right\:0 {
+		right:1px * $i;
+	}
+	.left\:center {
+		left:50%;
+	}
+	.right\:center {
+		right:50%;
+	}
 }
 
-.left-50 {
-	left:50%;
+@for $i from 0 through 100 {
+	.z-index\:#{$i} {
+		z-index: $i;
+	}
 }
 
-.right-0 {
-	right:0;
-}
-
-.right-50 {
-	right:50%;
-}
-
-.top-0 {
-	top:0;
-}
-
-.top-50 {
-	top:50%;
-}
-
-.bottom-0 {
-	bottom:0;
-}
-
-.bottom-50 {
-	bottom:50%;
-}
-
-@for $i from 0 through 99 {
-	.z-index-#{$i} {
+@for $i from 0 through 100 {
+	.z-index\:#{$i} {
 		z-index: $i;
 	}
 }
