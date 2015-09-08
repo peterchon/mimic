@@ -7,6 +7,22 @@
 @import 'inc/table';
 @import 'inc/form';
 
+.display\:none {
+	display:none;
+}
+
+.bg-color\:black {
+	background-color:black;
+}
+
+.color\:white {
+	color:white;
+}
+
+.cursor\:pointer {
+	cursor:pointer;
+}
+
 @for $i from 0 through 100 {
 	.padding\:#{$i}  {
 		padding:1px * $i;
@@ -41,4 +57,10 @@
 	.margin-left\:#{$i}  {
 		margin-left:1px * $i;
 	}		
+}
+
+@for $i from 0 through 100 {
+	.font-size\:#{$i} {
+		font-size:1px * $i;
+	}
 }

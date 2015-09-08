@@ -15,22 +15,28 @@
 				<h1 class="margin:0">Mimic</h1>
 			</header>
 			<section class="padding:50">
-				<h2>Mimic isn't a framework, it's inline-css, evolved.</h2>
+				<h2 class="font-size:34">Mimic isn't a framework, it's inline-css, class-fied.</h2>
 				<p class="margin-top:20">Most CSS frameworks are absolutely beautiful and simple to use. However, it takes a lot of work to make it your own. It's hard enough to be creative, but to override and re-work other craftsman's design is quite the challenge. This is probably why we see so many "like-minded" websites.</p>
 				<p class="margin-top:20">I work with a lot legacy codes. Most are written with the best of intentions (initially.) This means that most of my day is spent hunting down that one rogue class or inherited styles.</p>
 				<p class="margin-top:20">I'm guilty of it myself - starting the project with carefully thought-out SASS structure with sensible, modular approach to writing beautifully-orchestrated symphony of classes and inheritance. It's CSS nirvana. After submitting for review and QA, you start to find holes. Ugly, one-of-a-kind holes that needs to be patched with an equally ugly, non-sensical, duplicating work-arounds and hacks that will ultimately end with the humiliating <code class="red">!important</code> declaration(s).</p>
-				<p class="margin-top:20">After going through the same insanity over and over again, I started to think "Why not use CSS property name as my class name?" Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name.</p>
+				<p class="margin-top:20">After going through the same insanity over and over again, I started to think "Why not use CSS property name as my class name?" Sure it's little more work, but I'll always be able to control the style by just adding or removing a class name. Plus, I don't have to keep coming up with class names that makes sense.</p>
 				<p class="margin-top:20"><strong>Example:</strong></p>
 				<div class="example margin-top:20">
 					<div class="border display:block padding:20 margin-bottom:10">
 						<p class="padding-bottom:50">This would be a usual paragraph with a defined class that specifies a padding-bottom of 50px.</p>
 					</div>					
 					<div class="border display:block padding:20 margin-bottom:10">
-						<p class="padding:0">This would be the same paragraph but with a class of "padding:0".</p>
+						<p class="padding-bottom:0">This would be the same paragraph but with a class of "padding-bottom:0".</p>
 					</div>
 					
 				<p class="margin:0 margin-top:20">One of the advantages of using a system like Mimic is that you can always tell how the element is going to look without having to render it. If you see this code:</p>
-				<code class="padding:20 display:block">&lt;p class=&quot;margin-top:20 bg-color:black color:white align:right&quot;&gt;Can you guess my style?&lt;/p&gt;</code>
+				
+				<div class="guess padding:20 margin-top:20 margin-bottom:20 border">
+					<code class="display:block margin-bottom:10">&lt;p class=&quot;margin-top:20 padding:10 bg-color:black border-radius:5 color:white align:right&quot;&gt;Can you guess how I would render?&lt;/p&gt;</code>					
+					<span class="display:inline-block padding:3 padding-left:10 padding-right:10 font-size:12 border-radius:3 cursor:pointer border btn">show</span>
+					<p class="answer display:none margin-top:20 padding:10 border-radius:5 bg-color:black color:white align:right">Yey!</p>
+				</div>
+				
 				<p>Would you have any question as to how that paragraph would render?</p>
 				
 				<h3 class="margin-top:20">&ldquo;That's a lot of classes to write.&rdquo;</h3>
@@ -44,7 +50,7 @@
 			
 			<section class="padding:50 border:top">
 				<p class="margin:0"><strong class="display:block margin-bottom:10 green">First, the grids.</strong>
-				Mimic gives you a choice of 12/10/7/5 grid system with an 2% left-margin between the columns. Why so many? Because I like choices.</p>		
+				Mimic gives you a choice of 12/10/7 grid system with an 2% left-margin between the columns. Why so many? Because I like choices.</p>		
 				
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
@@ -140,27 +146,6 @@
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
 					<p class="padding:20 margin:0">
 						<code class="display:block">
-							&lt;div class=&quot;row:5&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:1&quot;&gt;1&lt;/div&gt;<br>
-							&lt;/div&gt;	
-						</code>
-					</p>
-				</div>
-				<div class="row:5 margin-top:20">
-					<div class="col:1 border-radius:5 padding:5">1</div>
-					<div class="col:1 border-radius:5 padding:5">1</div>
-					<div class="col:1 border-radius:5 padding:5">1</div>
-					<div class="col:1 border-radius:5 padding:5">1</div>
-					<div class="col:1 border-radius:5 padding:5">1</div>
-				</div>
-				
-				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
-					<p class="padding:20 margin:0">
-						<code class="display:block">
 							&lt;div class=&quot;row:12&quot;&gt;<br>
 								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
 								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
@@ -174,6 +159,27 @@
 				</div>
 				<div class="row:12 margin-top:20">
 					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+					<div class="col:2 border-radius:5 padding:5">2</div>
+				</div>
+
+				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
+					<p class="padding:20 margin:0">
+						<code class="display:block">
+							&lt;div class=&quot;row:10&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
+							&lt;/div&gt;	
+						</code>
+					</p>
+				</div>
+				<div class="row:10 margin-top:20">
 					<div class="col:2 border-radius:5 padding:5">2</div>
 					<div class="col:2 border-radius:5 padding:5">2</div>
 					<div class="col:2 border-radius:5 padding:5">2</div>
@@ -215,23 +221,6 @@
 					<div class="col:4 border-radius:5 padding:5">4</div>
 					<div class="col:4 border-radius:5 padding:5">4</div>
 					<div class="col:4 border-radius:5 padding:5">4</div>
-				</div>
-
-				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
-					<p class="padding:20 margin:0">
-						<code class="display:block">
-							&lt;div class=&quot;row:12&quot;&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:5&quot;&gt;5&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:5&quot;&gt;5&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;div class=&quot;col:2&quot;&gt;2&lt;/div&gt;<br>
-							&lt;/div&gt;	
-						</code>
-					</p>
-				</div>
-				<div class="row:12 margin-top:20">
-					<div class="col:5 border-radius:5 padding:5">5</div>
-					<div class="col:5 border-radius:5 padding:5">5</div>
-					<div class="col:2 border-radius:5 padding:5">2</div>
 				</div>
 
 				<div class="border display:block padding:20 margin-bottom:10 margin-top:20">
@@ -439,6 +428,10 @@
 					<div class="col:4 border-radius:5 padding:5 restart-grid">4: add "restart-grid" class</div>
 					<div class="col:8 border-radius:5 padding:5">8</div>
 				</div>	
+			</section>
+			
+			<section>
+				
 			</section>
 		</div>
 		

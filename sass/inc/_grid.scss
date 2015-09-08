@@ -34,18 +34,6 @@
 		}
 	}	
 }
-.row\:5 {
-	@for $i from 1 through 5 {
-		.col\:#{$i} {
-			float:left;
-			margin-left:2%;
-			width:(100% - (2 * (5 / $i - 1))) / (5 / $i);
-		}
-		.offset\:#{$i} {
-			margin-right:(100% - (2 * (5 / $i - 1))) / (5 / $i) + 2;
-		}
-	}	
-}
 
 [class^="row"] {
 	@extend .cf;	
