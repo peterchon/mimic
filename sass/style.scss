@@ -1,21 +1,8 @@
 $green: #12B26F;
 
-.heading {
-	p {
-		font-size:1.2em;
-		color:#202020;	
-	}
-}
-
 [class^="col"] {
 	background-color:rgba(18, 178, 111, 0.1);
 	text-align:center;
-}
-
-@for $i from 1 through 6 {
-	h#{$i} {
-		font-size: 3em - .5 * $i
-	}
 }
 
 .green {

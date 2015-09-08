@@ -27,6 +27,15 @@
 	.padding\:#{$i}  {
 		padding:1px * $i;
 	}		
+}
+
+@for $i from 0 through 100 {
+	.margin\:#{$i}  {
+		margin:1px * $i;
+	}
+}
+
+@for $i from 0 through 100 {
 	.padding-top\:#{$i} {
 		padding-top:1px * $i;
 	}
@@ -41,10 +50,7 @@
 	}			
 }
 
-@for $i from 0 through 100 {
-	.margin\:#{$i}  {
-		margin:1px * $i;
-	}			
+@for $i from 0 through 100 {	
 	.margin-top\:#{$i}  {
 		margin-top:1px * $i;
 	}

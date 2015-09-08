@@ -15,7 +15,8 @@
 }
 
 .adjust-center {
-	margin:0 auto;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .float\:left {
@@ -92,13 +93,6 @@
 		z-index: $i;
 	}
 }
-
-@for $i from 0 through 100 {
-	.z-index\:#{$i} {
-		z-index: $i;
-	}
-}
-
 
 
 
